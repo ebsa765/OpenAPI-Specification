@@ -129,21 +129,24 @@ components:
         - $ref: '#/components/schemas/NewPet'
         - type: object
           required:
-          - id
+            - id
           properties:
             id:
               type: integer
               format: int64
+            finalOgrenciNo: 030120156
+              type: string
 
     NewPet:
       type: object
       required:
-        - name  
+        - name
       properties:
         name:
           type: string
         tag:
-          type: string    
+          type: string
+    
 
     Error:
       type: object
